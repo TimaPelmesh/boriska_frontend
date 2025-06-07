@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы HTML</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/topic.css">
+</head>
+<body>
+    <div class="topic-container">
+        <h1>Основы HTML</h1>
+        
+        <div class="intro">
+            <p><strong>HTML</strong> (HyperText Markup Language) — язык разметки гипертекста, стандартный язык для создания веб-страниц. HTML описывает структуру веб-страницы с помощью элементов, которые сообщают браузеру, как отображать содержимое.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Что такое HTML?</h2>
+            <p>HTML — это не язык программирования, а язык разметки. Он использует специальные теги для описания структуры и содержания веб-страницы.</p>
+            
+            <p>Основные характеристики HTML:</p>
+            <ul>
+                <li>Определяет структуру веб-страницы</li>
+                <li>Состоит из элементов (тегов)</li>
+                <li>Не имеет логики программирования</li>
+                <li>Интерпретируется браузером</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Структура HTML-документа</h2>
+            <p>Каждый HTML-документ имеет базовую структуру:</p>
+            
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Заголовок страницы&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+    &lt;p&gt;Это мой первый HTML-документ.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            
+            <p>Давайте разберем каждый элемент:</p>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code> — объявление типа документа HTML5</li>
+                <li><code>&lt;html&gt;</code> — корневой элемент веб-страницы</li>
+                <li><code>&lt;head&gt;</code> — содержит метаданные и ссылки на внешние файлы</li>
+                <li><code>&lt;title&gt;</code> — определяет заголовок страницы (отображается на вкладке браузера)</li>
+                <li><code>&lt;body&gt;</code> — содержит все видимое содержимое страницы</li>
+                <li><code>&lt;h1&gt;</code> — заголовок первого уровня</li>
+                <li><code>&lt;p&gt;</code> — параграф (абзац)</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>HTML-элементы и теги</h2>
+            <p>HTML-элементы обозначаются тегами, записываемыми в угловых скобках:</p>
+            
+            <pre><code>&lt;tagname&gt;Содержимое...&lt;/tagname&gt;</code></pre>
+            
+            <p>Элементы HTML состоят из:</p>
+            <ul>
+                <li><strong>Открывающего тега</strong> — <code>&lt;tagname&gt;</code></li>
+                <li><strong>Содержимого</strong> — текст или другие элементы</li>
+                <li><strong>Закрывающего тега</strong> — <code>&lt;/tagname&gt;</code></li>
+            </ul>
+            
+            <p>Некоторые элементы не имеют содержимого и закрывающего тега — это <strong>пустые элементы</strong>, например:</p>
+            <pre><code>&lt;img src="image.jpg" alt="Описание изображения"&gt;</code></pre>
+        </div>
+        
+        <div class="section">
+            <h2>Атрибуты HTML</h2>
+            <p>Атрибуты предоставляют дополнительную информацию об элементах:</p>
+            
+            <pre><code>&lt;tagname attribute="value"&gt;Содержимое...&lt;/tagname&gt;</code></pre>
+            
+            <p>Основные атрибуты HTML:</p>
+            <ul>
+                <li><code>id</code> — уникальный идентификатор элемента</li>
+                <li><code>class</code> — класс для применения CSS-стилей</li>
+                <li><code>style</code> — встроенные CSS-стили</li>
+                <li><code>src</code> — источник для элементов мультимедиа</li>
+                <li><code>href</code> — URL для ссылок</li>
+                <li><code>alt</code> — альтернативный текст для изображений</li>
+            </ul>
+        </div>
+        
+        <div class="practice">
+            <h2>Практическое задание</h2>
+            <p>Создайте простую HTML-страницу со следующей структурой:</p>
+            <ol>
+                <li>Заголовок страницы "Моя первая HTML-страница"</li>
+                <li>Заголовок первого уровня с вашим именем</li>
+                <li>Параграф с кратким описанием о себе</li>
+                <li>Список ваших увлечений</li>
+            </ol>
+            
+            <p>Подсказка:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Моя первая HTML-страница&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Ваше имя&lt;/h1&gt;
+    &lt;p&gt;Краткая информация о себе...&lt;/p&gt;
+    &lt;h2&gt;Мои увлечения:&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Увлечение 1&lt;/li&gt;
+        &lt;li&gt;Увлечение 2&lt;/li&gt;
+        &lt;li&gt;Увлечение 3&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+        
+        <div class="section">
+            <h2>Следующие шаги</h2>
+            <p>Теперь, когда вы знаете основы HTML, мы можем перейти к изучению различных HTML-тегов в следующем уроке.</p>
+        </div>
+    </div>
+</body>
+</html> 

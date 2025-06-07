@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс по HTML, CSS и JavaScript</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="menu-toggle" aria-label="Переключить меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h1>Курс по веб-разработке</h1>
+            <p>HTML, CSS и JavaScript</p>
+        </header>
+        
+        <div class="content">
+            <nav class="sidebar">
+                <h2>Темы курса</h2>
+                <ul id="topics-list">
+                    <!-- HTML блок -->
+                    <li>
+                        <div class="topic-toggle">HTML</div>
+                        <ul class="submenu">
+                            <li><a href="topics/html_basics.html" target="content-frame">Введение в HTML</a></li>
+                            <li><a href="topics/html_text.html" target="content-frame">Работа с текстом</a></li>
+                            <li><a href="topics/html_multimedia.html" target="content-frame">Мультимедиа и изображения</a></li>
+                            <li><a href="topics/html_links.html" target="content-frame">Гиперссылки</a></li>
+                            <li><a href="topics/html_forms.html" target="content-frame">Формы и элементы ввода</a></li>
+                            <li><a href="topics/html_tables.html" target="content-frame">Таблицы</a></li>
+                            <li><a href="topics/html_semantic.html" target="content-frame">Семантическая верстка</a></li>
+                            <li><a href="topics/html_meta_seo.html" target="content-frame">Метатеги и SEO-основы</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- CSS блок -->
+                    <li>
+                        <div class="topic-toggle">CSS</div>
+                        <ul class="submenu">
+                            <li><a href="topics/css_basics.html" target="content-frame">Введение в CSS</a></li>
+                            <li><a href="topics/css_selectors.html" target="content-frame">Селекторы</a></li>
+                            <li><a href="topics/css_properties.html" target="content-frame">Свойства стилей</a></li>
+                            <li><a href="topics/css_box_model.html" target="content-frame">Блочная модель</a></li>
+                            <li><a href="topics/css_positioning.html" target="content-frame">Расположение элементов</a></li>
+                            <li><a href="topics/css_flexbox.html" target="content-frame">Flexbox</a></li>
+                            <li><a href="topics/css_grid.html" target="content-frame">Grid Layout</a></li>
+                            <li><a href="topics/css_responsive.html" target="content-frame">Адаптивный дизайн</a></li>
+                            <li><a href="topics/css_animations.html" target="content-frame">Анимация и переходы</a></li>
+                            <li><a href="topics/css_methodology.html" target="content-frame">CSS-методологии</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- JavaScript блок -->
+                    <li>
+                        <div class="topic-toggle">JavaScript</div>
+                        <ul class="submenu">
+                            <li><a href="topics/js_basics.html" target="content-frame">Введение в JavaScript</a></li>
+                            <li><a href="topics/js_variables.html" target="content-frame">Переменные и типы данных</a></li>
+                            <li><a href="topics/js_conditionals.html" target="content-frame">Условия и циклы</a></li>
+                            <li><a href="topics/js_functions.html" target="content-frame">Функции</a></li>
+                            <li><a href="topics/js_arrays.html" target="content-frame">Работа с массивами</a></li>
+                            <li><a href="topics/js_objects.html" target="content-frame">Работа с объектами</a></li>
+                            <li><a href="topics/js_dom.html" target="content-frame">DOM</a></li>
+                            <li><a href="topics/js_events.html" target="content-frame">События</a></li>
+                            <li><a href="topics/js_forms.html" target="content-frame">Формы и валидация</a></li>
+                            <li><a href="topics/js_storage.html" target="content-frame">LocalStorage и SessionStorage</a></li>
+                            <li><a href="topics/js_async.html" target="content-frame">Асинхронность</a></li>
+                            <li><a href="topics/js_api.html" target="content-frame">Работа с API</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <main class="content-area">
+                <iframe name="content-frame" id="content-frame" src="topics/welcome.html" frameborder="0"></iframe>
+            </main>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Курс по веб-разработке</p>
+        </footer>
+    </div>
+</body>
+</html>

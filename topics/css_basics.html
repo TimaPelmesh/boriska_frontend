@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы CSS</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/topic.css">
+</head>
+<body>
+    <div class="topic-container">
+        <h1>Основы CSS</h1>
+        
+        <div class="intro">
+            <p><strong>CSS</strong> (Cascading Style Sheets) — каскадные таблицы стилей, используются для оформления веб-страниц. CSS позволяет отделить визуальное представление документа от его содержимого (HTML).</p>
+        </div>
+        
+        <div class="section">
+            <h2>Что такое CSS?</h2>
+            <p>CSS — это язык таблиц стилей, который определяет, как элементы HTML отображаются на экране, на бумаге или в других медиа.</p>
+            
+            <p>Основные преимущества CSS:</p>
+            <ul>
+                <li>Разделение содержания и оформления</li>
+                <li>Контроль всех аспектов внешнего вида страницы</li>
+                <li>Повторное использование стилей на многих страницах</li>
+                <li>Адаптивность под разные устройства</li>
+                <li>Повышение скорости загрузки страниц</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Синтаксис CSS</h2>
+            <p>CSS-правило состоит из селектора и блока объявлений:</p>
+            
+            <pre><code>селектор {
+    свойство1: значение1;
+    свойство2: значение2;
+    свойство3: значение3;
+}</code></pre>
+            
+            <p>Например:</p>
+            <pre><code>h1 {
+    color: blue;
+    font-size: 24px;
+    text-align: center;
+}</code></pre>
+            
+            <p>Здесь:</p>
+            <ul>
+                <li><strong>селектор</strong> (<code>h1</code>) указывает на элемент HTML, который нужно стилизовать</li>
+                <li><strong>свойства</strong> (<code>color</code>, <code>font-size</code>, <code>text-align</code>) определяют, какие характеристики элемента изменяются</li>
+                <li><strong>значения</strong> (<code>blue</code>, <code>24px</code>, <code>center</code>) задают новые значения для свойств</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Способы подключения CSS</h2>
+            <p>Существует три основных способа добавления CSS в HTML-документ:</p>
+            
+            <h3>1. Внешний CSS (рекомендуется)</h3>
+            <p>CSS-код размещается в отдельном файле с расширением .css, который подключается к HTML с помощью тега <code>link</code>:</p>
+            <pre><code>&lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;</code></pre>
+            
+            <h3>2. Внутренний CSS</h3>
+            <p>CSS-код помещается внутри тега <code>style</code> в разделе <code>head</code>:</p>
+            <pre><code>&lt;head&gt;
+    &lt;style&gt;
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: navy;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+            
+            <h3>3. Встроенный CSS</h3>
+            <p>CSS-код добавляется непосредственно к элементу HTML с помощью атрибута <code>style</code>:</p>
+            <pre><code>&lt;h1 style="color: blue; text-align: center;"&gt;Заголовок&lt;/h1&gt;</code></pre>
+        </div>
+        
+        <div class="section">
+            <h2>Основные селекторы CSS</h2>
+            <p>Селекторы определяют, к каким элементам HTML применяются стили:</p>
+            
+            <table>
+                <tr>
+                    <th>Селектор</th>
+                    <th>Пример</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>Селектор элемента</td>
+                    <td><code>p { }</code></td>
+                    <td>Выбирает все элементы <code>&lt;p&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>Селектор ID</td>
+                    <td><code>#id { }</code></td>
+                    <td>Выбирает элемент с конкретным id</td>
+                </tr>
+                <tr>
+                    <td>Селектор класса</td>
+                    <td><code>.class { }</code></td>
+                    <td>Выбирает все элементы с указанным классом</td>
+                </tr>
+                <tr>
+                    <td>Универсальный селектор</td>
+                    <td><code>* { }</code></td>
+                    <td>Выбирает все элементы</td>
+                </tr>
+                <tr>
+                    <td>Селектор потомков</td>
+                    <td><code>div p { }</code></td>
+                    <td>Выбирает все <code>&lt;p&gt;</code> внутри <code>&lt;div&gt;</code></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Основные свойства CSS</h2>
+            
+            <h3>Цвета и фон</h3>
+            <ul>
+                <li><code>color</code> — цвет текста</li>
+                <li><code>background-color</code> — цвет фона</li>
+                <li><code>background-image</code> — изображение фона</li>
+            </ul>
+            
+            <h3>Текст и шрифты</h3>
+            <ul>
+                <li><code>font-family</code> — семейство шрифта</li>
+                <li><code>font-size</code> — размер шрифта</li>
+                <li><code>font-weight</code> — толщина шрифта</li>
+                <li><code>text-align</code> — выравнивание текста</li>
+                <li><code>text-decoration</code> — декорирование текста (подчеркивание и т.д.)</li>
+            </ul>
+            
+            <h3>Размеры и отступы</h3>
+            <ul>
+                <li><code>width</code> — ширина элемента</li>
+                <li><code>height</code> — высота элемента</li>
+                <li><code>margin</code> — внешние отступы</li>
+                <li><code>padding</code> — внутренние отступы</li>
+                <li><code>border</code> — граница элемента</li>
+            </ul>
+            
+            <h3>Позиционирование</h3>
+            <ul>
+                <li><code>position</code> — метод позиционирования</li>
+                <li><code>display</code> — тип отображения элемента</li>
+                <li><code>float</code> — обтекание элемента</li>
+                <li><code>z-index</code> — порядок наложения</li>
+            </ul>
+        </div>
+        
+        <div class="practice">
+            <h2>Практическое задание</h2>
+            <p>Создайте HTML-страницу с тремя абзацами текста и примените различные стили:</p>
+            
+            <ol>
+                <li>К первому абзацу примените красный цвет текста и выравнивание по центру</li>
+                <li>Ко второму абзацу — синий цвет текста, курсивное начертание и увеличенный размер шрифта</li>
+                <li>К третьему абзацу — зеленый цвет текста, жирное начертание и рамку</li>
+            </ol>
+            
+            <p>Пример HTML:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Практика CSS&lt;/title&gt;
+    &lt;style&gt;
+        .paragraph1 {
+            color: red;
+            text-align: center;
+        }
+        
+        .paragraph2 {
+            color: blue;
+            font-style: italic;
+            font-size: 20px;
+        }
+        
+        .paragraph3 {
+            color: green;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p class="paragraph1"&gt;Первый абзац с красным цветом и выравниванием по центру.&lt;/p&gt;
+    &lt;p class="paragraph2"&gt;Второй абзац с синим цветом, курсивом и увеличенным шрифтом.&lt;/p&gt;
+    &lt;p class="paragraph3"&gt;Третий абзац с зеленым цветом, жирным шрифтом и рамкой.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+        
+        <div class="section">
+            <h2>Наследование и каскадность</h2>
+            <p>CSS имеет два важных принципа:</p>
+            
+            <h3>Наследование</h3>
+            <p>Некоторые свойства CSS передаются от родительских элементов к дочерним. Например, если вы установите <code>color</code> для <code>body</code>, все элементы внутри body унаследуют этот цвет, если для них не задано другое значение.</p>
+            
+            <h3>Каскадность</h3>
+            <p>Определяет, какие стили применяются в случае конфликтов. Порядок приоритета (от высшего к низшему):</p>
+            <ol>
+                <li>Встроенные стили (атрибут <code>style</code>)</li>
+                <li>Внутренние и внешние стили</li>
+                <li>Стили браузера по умолчанию</li>
+            </ol>
+            <p>При одинаковом уровне приоритета последний объявленный стиль имеет преимущество.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Следующие шаги</h2>
+            <p>Теперь, когда вы понимаете основы CSS, можно переходить к изучению более сложных селекторов и продвинутых техник оформления в следующих уроках.</p>
+        </div>
+    </div>
+</body>
+</html> 
